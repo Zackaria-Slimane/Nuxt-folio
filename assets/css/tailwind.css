@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "MonoLisa";
+    src: url("./assets/fonts/MonoLisa-Regular.woff2");
+}
+
+@font-face {
+    font-family: "MonoLisaBold";
+    src: url("./assets/fonts/MonoLisa-Bold.woff2");
+}
+
+@font-face {
+    font-family: "Logo";
+    src: url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+}
+
+@font-face {
+    font-family: "Monaco";
+    src: url("./assets/fonts/Monaco.woff");
+}
+
+
+
+
+body {
+    @apply bg-background text-p_text font-theme selection:bg-selectionBack relative w-full flex flex-col items-center;
+}
+
+div > .router-link-active {
+    @apply bg-btn_back text-btn_text pb-2 pt-2 rounded-md;
+}
