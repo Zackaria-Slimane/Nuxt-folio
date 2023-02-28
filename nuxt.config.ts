@@ -4,8 +4,18 @@ export default defineNuxtConfig({
 		'@nuxtjs/tailwindcss',
 		'@pinia/nuxt',
 		'@nuxtjs/fontaine',
+		'nuxt-simple-sitemap',
 	],
 	runtimeConfig: {
+
+		public: {
+			titleSeparator: '|',
+			trailingSlash: true,
+			siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://zackariasl.dev/',
+			siteName: 'Zackaria SLIMANE - Frontend developer',
+			siteDescription: 'Zackaria SLIMANE - Front-end Web Developer portfolio',
+			language: 'en-US', // prefer more explicit language codes like `en-AU` over `en`
+		},
 		GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
 	},
 
@@ -15,6 +25,12 @@ export default defineNuxtConfig({
 		exposeConfig: true
 	},
 	nitro: {
+		prerender: {
+			crawlLinks: true,
+			routes: [
+				'/',
+			]
+		},
 		compressPublicAssets: {
 			gzip: true,
 			brotli: true,
@@ -28,18 +44,19 @@ export default defineNuxtConfig({
 	app: {
 		pageTransition: { name: "page", mode: "out-in", type: "transition" },
 		head: {
+			titleTemplate: '%pageTitle %titleSeparator %siteName',
 			title: "Zackaria SLIMANE - Front-end Web Developer",
 			viewport: 'width=device-width, initial-scale=1.0',
 			htmlAttrs: {
-				lang: "en",
+				lang: "en-US",
 			},
 			meta: [
-				{ name: "description", content: "Zackaria SLIMANE - Front-end Web Developer" },
-				{ name: "og:description", content: "Zackaria SLIMANE - Front-end Web Developer" },
-				{ name: "twitter:description", content: "Zackaria SLIMANE - Front-end Web Developer" },
+				{ name: "description", content: "Zackaria SLIMANE - Front-end Web Developer portfolio" },
+				{ name: "og:description", content: "Zackaria SLIMANE - Front-end Web Developer portfolio" },
+				{ name: "twitter:description", content: "Zackaria SLIMANE - Front-end Web Developer portfolio" },
 				{ name: "og:title", content: "Zackaria SLIMANE - Front-end Web Developer" },
 				{ name: "twitter:title", content: "Zackaria SLIMANE - Front-end Web Developer" },
-				{ name: "application-name", content: "Zackaria SLIMANE - Front-end Web Developer" },
+				{ name: "application-name", content: "Zackaria SLIMANE - Front-end Web Developer portfolio" },
 				{ name: "apple-mobile-web-app-title", content: "Zackaria SLIMANE - Front-end Web Developer" },
 				{ charset: "UTF-8" },
 			],

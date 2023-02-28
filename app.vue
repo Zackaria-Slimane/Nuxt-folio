@@ -1,13 +1,15 @@
 <template>
-  <NuxtLayout name="default">
-    <NuxtPage v-slot="{ Component }">
-      <component :is="Component" />
-    </NuxtPage>
-  </NuxtLayout>
-  <Teleport to="body">
-    <TheNavbar />
-    <CookiesNotification />
-  </Teleport>
+  <div>
+    <NuxtLayout name="default">
+      <NuxtPage v-slot="{ Component }">
+        <component :is="Component" />
+      </NuxtPage>
+    </NuxtLayout>
+    <Teleport to="body">
+      <TheNavbar />
+      <CookiesNotification />
+    </Teleport>
+  </div>
 </template>
 
 <style>

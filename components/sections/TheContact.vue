@@ -5,7 +5,8 @@
 
       <div class="text-center">
         <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-gray-50">Get in touch with me
-          !</h2>
+          <span class="text-amber-400">!</span>
+        </h2>
       </div>
       <div class="mt-12">
         <form action="#" method="POST" id="contact-form"
@@ -14,14 +15,6 @@
             <label for="first-name" class="block text-sm font-medium text-gray-50">Name</label>
             <div class="mt-1">
               <input type="text" name="first-name" id="name" autocomplete="name"
-                class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-blue-500 focus:ring-blue-500" />
-            </div>
-          </div>
-
-          <div class="sm:col-span-2">
-            <label for="company" class="block text-sm font-medium text-gray-50">Company</label>
-            <div class="mt-1">
-              <input type="text" name="company" id="company" autocomplete="organization"
                 class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-blue-500 focus:ring-blue-500" />
             </div>
           </div>
@@ -36,7 +29,7 @@
           <div class="sm:col-span-2">
             <label for="message" class="block text-sm font-medium text-gray-50">Message</label>
             <div class="mt-1">
-              <textarea id="message" name="message" rows="4"
+              <textarea id="message" name="message" rows="6"
                 class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-blue-500 focus:ring-blue-500" />
             </div>
           </div>

@@ -6,7 +6,7 @@
       <SocialIcon title="LinkedIn" link="https://www.linkedin.com/in/zackaria-slimane/"
         icon="ant-design:linkedin-outlined" />
       <SocialIcon title="Resume"
-        link="https://drive.google.com/file/d/1YeqJjct_te-6jd1_6qjT3OglJK1NOTo0/view?usp=share_link"
+        link="https://drive.google.com/file/d/1QCbKH84FV6Ea5TsGHEi9fr69OqRMgDOc/view?usp=share_link"
         icon="ant-design:file-outlined" />
       <SocialIcon title="Twitter" link="https://twitter.com/gitignorer"
         icon="ant-design:twitter-outlined" />

@@ -2,7 +2,7 @@
 	<div>
 		<NuxtLayout name="page">
 			<div class="flex flex-col gap-6 lg:gap-9 mx-auto w-full md:w-10/12">
-				<SectionTitle>About me </SectionTitle>
+				<MainTitle>About me </MainTitle>
 				<SectionParagraph>
 					Hey there, i'm <span class="!text-teal-400">Zackaria Slimane</span> , a passionate
 					front end developer and
