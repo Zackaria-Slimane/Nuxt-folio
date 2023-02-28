@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+ exclude: [".nuxt"],
   theme: {
     extend: {
       backgroundImage: {
@@ -59,5 +59,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  	plugins: [require("@tailwindcss/forms")],
 };
