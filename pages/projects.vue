@@ -12,8 +12,9 @@
       <MainProjectItem v-for="proj in projects" :key="proj.id" :description="proj.description"
         :image="proj.image" :link="proj.link" :name="proj.name" />
     </div>
-    <hr class="bg-squgily bg-repeat border-0 h-[6px] opacity-25" />
 
+
+    <TheFooter />
   </NuxtLayout>
 </template>
 

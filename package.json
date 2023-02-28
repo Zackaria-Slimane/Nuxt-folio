@@ -8,6 +8,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxtjs/fontaine": "^0.2.4",
     "@nuxtjs/google-analytics": "^2.4.0",
     "nuxt": "^3.0.0-rc.11",
     "vue-gtag-next": "^1.14.0"

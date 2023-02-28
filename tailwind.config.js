@@ -35,8 +35,13 @@ module.exports = {
         xl: "1280px",
         "2xl": "1536px",
       },
+      fontSize:{
+        mobile: "0.525 em"
+      },
       fontFamily: {
-        logo: "Logo",
+        zs: "Darlington",
+        logo: [ "DarlingtonDemo", "Darling",
+        "monospace"],
         theme: [
           "MonoLisa",
           "Monaco",

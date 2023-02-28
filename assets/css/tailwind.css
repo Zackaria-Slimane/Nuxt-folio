@@ -12,14 +12,19 @@
     src: url("./assets/fonts/MonoLisa-Bold.woff2");
 }
 
-@font-face {
-    font-family: "Logo";
-    src: url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
-}
 
 @font-face {
     font-family: "Monaco";
     src: url("./assets/fonts/Monaco.woff");
+}
+
+@font-face {
+    font-family: "Darlington";
+    src: url("./assets/fonts/Darlington.woff2");
+}
+@font-face {
+    font-family: "DarlingtonDemo";
+    src: url("./assets/fonts/DarlingtonDemo.ttf");
 }
 
 

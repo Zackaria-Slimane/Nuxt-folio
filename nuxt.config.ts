@@ -1,29 +1,31 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-    modules: [
-        '@nuxtjs/tailwindcss',
-        '@pinia/nuxt',
-    ],
-    tailwindcss: {
-        cssPath: '~/assets/css/tailwind.css',
-        configPath: '~/tailwind.config.js',
-    },
-    nitro: {
+	modules: [
+		'@nuxtjs/tailwindcss',
+		'@pinia/nuxt',
+		'@nuxtjs/fontaine'
+	],
+	tailwindcss: {
+		cssPath: '~/assets/css/tailwind.css',
+		configPath: '~/tailwind.config.js',
+		exposeConfig: true
+	},
+	nitro: {
 		compressPublicAssets: {
 			gzip: true,
 			brotli: true,
 		},
 		minify: true,
 	},
-    components: [{
-        path: '~/components', pathPrefix: false,
-    }],
-    app: {
+	components: [{
+		path: '~/components', pathPrefix: false,
+	}],
+	app: {
 		pageTransition: { name: "page", mode: "out-in", type: "transition" },
 		head: {
 			title: "Zackaria SLIMANE - Front-end Web Developer",
 			htmlAttrs: {
-				lang: "en-US",
+				lang: "en",
 			},
 			meta: [
 				{ name: "description", content: "Zackaria SLIMANE - Front-end Web Developer" },

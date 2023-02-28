@@ -1,9 +1,10 @@
 <template>
 	<div class="flex flex-col gap-8 ">
-
 		<MainTitle
 			class="bg-clip-text bg-gradient-to-r from-sky-600 via-teal-400 to-yellow-500 text-transparent">
-			Web Developer, javsScript passionate and Wordpress enthusiast</MainTitle>
+			Web Developer, javsScript passionate and Wordpress enthusiast
+		</MainTitle>
+
 		<MainParagraph>
 			Hello, i am <span class="text-teal-400">Zackaria Slimane</span> , a passionate
 			front end developer and

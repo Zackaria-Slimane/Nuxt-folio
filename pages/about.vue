@@ -4,7 +4,7 @@
 			<div class="flex flex-col gap-6 lg:gap-9 mx-auto w-full md:w-10/12">
 				<SectionTitle>About me </SectionTitle>
 				<SectionParagraph>
-					Hey there visitor, i'm <span class="!text-teal-400">Zackaria Slimane</span> , a passionate
+					Hey there, i'm <span class="!text-teal-400">Zackaria Slimane</span> , a passionate
 					front end developer and
 					<span class="!text-yellow-400">javascript</span>
 					enthusiast.
@@ -34,11 +34,14 @@
 					I started learning about web-development following the
 					<LinkBtn link="https://freecodecamp.org" text="FreeCodeCamp" /> curriculum, where I
 					was introduced to HTML , Css and JavaScript.
-					After that i moved on to more in depth javaScript fundamentals and advanced courses, i then
+					After that i moved on to more in depth <span class="text-yellow-400">javaScript</span>
+					fundamentals and advanced courses, i then
 					started doing Data structures and algorithms challenges until i felt comfortable enough to
-					move to Frameworks. Out of the big three, Vue js caught my attention the most and i dove in
+					move to Frameworks. Out of the big three, <span class="text-green-400">Vue</span> caught my
+					attention the most and i dove in
 					head first, The DX is just an absolute delight and the learning curve is very gentle. Since
-					then i managed to get my first tech job at a startup thanks to my Vue skills and have been
+					then i managed to get my first tech job at a startup where i got the chance to work with
+					<span class="text-green-400">Vue</span> and have been
 					developing with it ever since both profesionnally and on the side.
 				</SectionParagraph>
 				<SectionParagraph>
@@ -57,7 +60,7 @@
 				</SectionParagraph>
 			</div>
 			<TheWorks />
-
+			<TheFooter />
 		</NuxtLayout>
 	</div>
 </template>

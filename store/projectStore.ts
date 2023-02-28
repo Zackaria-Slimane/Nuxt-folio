@@ -43,7 +43,7 @@ export const useProjectStore = defineStore<string, ProjectStore>("projectStore",
                 "Basic portfolio built with Vue 2 - outdated",
             tech: ["Vue 2", "TailwindCSS"],
             link: "https://portcelio.netlify.app/",
-            featured: true,
+            featured: false,
         },
     ];
 

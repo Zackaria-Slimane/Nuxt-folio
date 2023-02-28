@@ -21,10 +21,10 @@ import VueGtag, { trackRouter, useState } from 'vue-gtag-next';
 const cookieStatus = ref<false | string>(false);
 const handleClick = () => {
   cookieStatus.value = "true";
-  localStorage.setItem("did_they_love_cookies", "they_did!");
+  localStorage.setItem("are_cookies_allowed", "cookies_are_allowed");
 };
 onMounted(() => {
-  cookieStatus.value = localStorage.getItem("did_they_love_cookies");
+  cookieStatus.value = localStorage.getItem("are_cookies_allowed");
 })
 
 defineNuxtPlugin((nuxtApp) => {

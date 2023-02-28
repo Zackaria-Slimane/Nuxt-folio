@@ -25,5 +25,6 @@
 				anonymously.
 			</SectionParagraph>
 		</NuxtLayout>
+		<TheFooter />
 	</NuxtLayout>
 </template>
