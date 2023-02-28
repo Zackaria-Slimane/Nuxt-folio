@@ -1,7 +1,7 @@
 <template>
   <div>
     <NuxtLayout name="page">
-      <Centered />
+      <TheContact />
       <TheFooter />
     </NuxtLayout>
   </div>

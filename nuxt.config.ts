@@ -60,7 +60,9 @@ export default defineNuxtConfig({
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-VRCYTH918H');` }],
+  gtag('config', 'G-VRCYTH918H',{
+  cookie_flags: 'max-age=7200;secure;samesite=none'
+});` }],
 		},
 	},
 })

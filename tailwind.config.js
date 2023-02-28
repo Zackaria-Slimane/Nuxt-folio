@@ -6,7 +6,7 @@ module.exports = {
       backgroundImage: {
         squgily: "url('~/assets/divider.svg')",
         topbar:
-          "linear-gradient(to right, #00c3ff, #ffff1c);",
+          "linear-gradient(90deg, hsla(55, 96%, 69%, 1) 0%, hsla(41, 97%, 64%, 1) 50%, hsla(343, 88%, 63%, 1) 100%);",
       },
       colors: {
         p_text: "#b1b1b1",

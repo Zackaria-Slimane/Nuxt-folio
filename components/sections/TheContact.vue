@@ -8,7 +8,8 @@
           !</h2>
       </div>
       <div class="mt-12">
-        <form action="#" method="POST" class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+        <form action="#" method="POST" id="contact-form"
+          class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
           <div>
             <label for="first-name" class="block text-sm font-medium text-gray-50">Name</label>
             <div class="mt-1">
@@ -52,8 +53,5 @@
 </template>
 
 <script setup>
-  import { ref } from 'vue'
 
-
-  const agreed = ref(false)
 </script>
