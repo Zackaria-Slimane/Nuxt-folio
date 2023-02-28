@@ -4,7 +4,6 @@ export default defineNuxtConfig({
 		'@nuxtjs/tailwindcss',
 		'@pinia/nuxt',
 		'@nuxtjs/fontaine',
-
 	],
 	runtimeConfig: {
 		GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
@@ -55,14 +54,13 @@ export default defineNuxtConfig({
 			script: [
 				{
 					async: true,
-					src: 'https://www.googletagmanager.com/gtag/js?id=G-LRTBDF1P56',
+					src: 'https://www.googletagmanager.com/gtag/js?id=G-VRCYTH918H',
 				}, {
-					async: true, children: `window.dataLayer = window.dataLayer || [];
+					async: true, children: ` window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-LRTBDF1P56');
-	console.log('gtag loaded')` }],
+  gtag('config', 'G-VRCYTH918H');` }],
 		},
 	},
 })
