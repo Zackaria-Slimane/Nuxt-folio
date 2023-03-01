@@ -9,7 +9,9 @@
 				</h2>
 			</div>
 			<div class="mt-12">
-				<form netlify id="contact-form" class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+				<form @submit="handleSubmit" data-netlify="true" name="contact-form" id="contact-form"
+					class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+					<input type="hidden" name="form-name" value="contact-form" />
 					<div>
 						<label for="first-name" class="block text-sm font-medium text-gray-50">Name</label>
 						<div class="mt-1">
@@ -47,6 +49,7 @@
 
 <script lang="ts" setup>
 import { reactive } from 'vue';
+const { $showToast } = useNuxtApp();
 
 
 interface formData {
@@ -65,12 +68,26 @@ let formData: formData = reactive({
 	message: "",
 })
 
-function formSubmit() {
-	let formResult
-	if (formData?.name.length > 4 && formData?.email.length > 6 && formData?.message.length > 0) {
-		console.log({ formData })
-	}
-	return formResult
+function encode(data: { [x: string]: string | number | boolean; }) {
+	return Object.keys(data)
+		.map(
+			(key) =>
+				encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+		)
+		.join("&");
 }
+
+const handleSubmit = (event) => {
+	useFetch("/", {
+		method: "POST",
+		headers: { "Content-Type": "application/x-www-form-urlencoded" },
+		body: encode({
+			"form-name": event.target.getAttribute("name"),
+			...name,
+		}),
+	})
+		.then(() => $showToast(`Thank you gor getting in touch, i will get back to you as soon as i can !`, "success", 5000))
+		.catch((error) => alert(error));
+};
 
 </script>

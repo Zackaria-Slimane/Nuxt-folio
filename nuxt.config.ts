@@ -5,16 +5,6 @@ export default defineNuxtConfig({
 		'@pinia/nuxt',
 		'@nuxtjs/fontaine',
 		'nuxt-simple-sitemap',
-
-		['nuxt-mail', {
-			message: {
-				to: '	contact@zackariasl.dev',
-			},
-			smtp: {
-				host: process.env.STMP_HOST,
-				port: process.env.STMP_PORT,
-			},
-		}],
 	],
 
 	runtimeConfig: {
