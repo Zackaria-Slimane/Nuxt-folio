@@ -9,8 +9,7 @@
 				</h2>
 			</div>
 			<div class="mt-12">
-				<form netlify @submit.prevent="formSubmit" id="contact-form"
-					class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+				<form netlify id="contact-form" class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
 					<div>
 						<label for="first-name" class="block text-sm font-medium text-gray-50">Name</label>
 						<div class="mt-1">
