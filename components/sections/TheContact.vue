@@ -77,9 +77,10 @@ function encode(data: { [x: string]: string | number | boolean; }) {
 		.join("&");
 }
 
+
 const handleSubmit = (event) => {
-	$showToast(`Thank you gor getting in touch, i will get back to you as soon as i can !`, "info", 5000)
-	useFetch("/", {
+	event.preventDefault();
+	$fetch("/", {
 		method: "POST",
 		headers: { "Content-Type": "application/x-www-form-urlencoded" },
 		body: encode({
@@ -87,8 +88,19 @@ const handleSubmit = (event) => {
 			...name,
 		}),
 	})
-		.then(() => $showToast(`Thank you gor getting in touch, i will get back to you as soon as i can !`, "success", 5000))
+		.then(() =>
+			$showToast(`Thank you gor getting in touch, i will get back to you as soon as i can !`, "success", 5000),
+			clearData()
+		)
 		.catch((error) => alert(error));
 };
+
+function clearData() {
+	setTimeout(() => {
+		window.location.reload()
+	}, 5001);
+}
+
+
 
 </script>
