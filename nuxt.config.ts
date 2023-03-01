@@ -5,9 +5,19 @@ export default defineNuxtConfig({
 		'@pinia/nuxt',
 		'@nuxtjs/fontaine',
 		'nuxt-simple-sitemap',
-	],
-	runtimeConfig: {
 
+		['nuxt-mail', {
+			message: {
+				to: '	contact@zackariasl.dev',
+			},
+			smtp: {
+				host: process.env.STMP_HOST,
+				port: process.env.STMP_PORT,
+			},
+		}],
+	],
+
+	runtimeConfig: {
 		public: {
 			titleSeparator: '|',
 			trailingSlash: true,
@@ -17,6 +27,8 @@ export default defineNuxtConfig({
 			language: 'en-US', // prefer more explicit language codes like `en-AU` over `en`
 		},
 		GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
+		SMTP_PORT: process.env.SMTP_PORT,
+		SMTP_HOST: process.env.SMTP_HOST
 	},
 
 	tailwindcss: {
