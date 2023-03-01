@@ -30,20 +30,7 @@
 					<LinkBtn class="!text-green-400" link="https://supabase.com" text="SupaBase" /> as a Backend
 					as a service BaaS.
 				</SectionParagraph>
-				<SectionParagraph>
-					I started learning about web-development following the
-					<LinkBtn link="https://freecodecamp.org" text="FreeCodeCamp" /> curriculum, where I
-					was introduced to HTML , Css and JavaScript.
-					After that i moved on to more in depth <span class="text-yellow-400">javaScript</span>
-					fundamentals and advanced courses, i then
-					started doing Data structures and algorithms challenges until i felt comfortable enough to
-					move to Frameworks. Out of the big three, <span class="text-green-400">Vue</span> caught my
-					attention the most and i dove in
-					head first, The DX is just an absolute delight and the learning curve is very gentle. Since
-					then i managed to get my first tech job at a startup where i got the chance to work with
-					<span class="text-green-400">Vue</span> and have been
-					developing with it ever since both profesionnally and on the side.
-				</SectionParagraph>
+
 				<SectionParagraph>
 					You can find some of my projects code samples and demos on
 					<LinkBtn class="text-rose-400" link="https://github.com/Zackaria-Slimane"
