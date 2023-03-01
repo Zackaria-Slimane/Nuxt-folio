@@ -9,11 +9,11 @@
 				</h2>
 			</div>
 			<div class="mt-12">
-				<form @submit="handleSubmit" data-netlify="true" name="contact-form" id="contact-form"
+				<form @submit="handleSubmit" data-netlify="true" name="contact-form"
 					class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
-					<input type="hidden" name="form-name" value="contact-form" />
 					<div>
-						<label for="first-name" class="block text-sm font-medium text-gray-50">Name</label>
+						<input type="hidden" name="form-name" value="contact-form" />
+						<label for="name" class="block text-sm font-medium text-gray-50">Name</label>
 						<div class="mt-1">
 							<input type="text" name="name" id="name" autocomplete="name" v-model="formData.name"
 								class="block w-full rounded-md  text-blue-800 border-blue-300 py-3 px-4 shadow-sm focus:border-blue-500 focus:ring-blue-500" />
@@ -42,6 +42,11 @@
 							chat</button>
 					</div>
 				</form>
+				<form name="contact-form" netlify hidden>
+					<input type="text" name="name">
+					<input type="email" name="email">
+					<input type="textarea" name="message">
+				</form>
 			</div>
 		</div>
 	</div>
@@ -68,24 +73,24 @@ let formData: formData = reactive({
 	message: "",
 })
 
-function encode(data: { [x: string]: string | number | boolean; }) {
+function encode(data) {
 	return Object.keys(data)
 		.map(
-			(key) =>
-				encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+			key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
 		)
 		.join("&");
-}
+},
 
 
 const handleSubmit = (event) => {
 	event.preventDefault();
+	let form = event.target
 	$fetch("/", {
 		method: "POST",
 		headers: { "Content-Type": "application/x-www-form-urlencoded" },
 		body: encode({
-			"form-name": event.target.getAttribute("name"),
-			...name,
+			"form-name": "contact-form",
+			...form
 		}),
 	})
 		.then(() =>
