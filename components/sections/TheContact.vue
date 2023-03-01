@@ -78,6 +78,7 @@ function encode(data: { [x: string]: string | number | boolean; }) {
 }
 
 const handleSubmit = (event) => {
+	$showToast(`Thank you gor getting in touch, i will get back to you as soon as i can !`, "info", 5000)
 	useFetch("/", {
 		method: "POST",
 		headers: { "Content-Type": "application/x-www-form-urlencoded" },
