@@ -79,7 +79,7 @@ function encode(data) {
 			key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
 		)
 		.join("&");
-},
+};
 
 
 const handleSubmit = (event) => {
