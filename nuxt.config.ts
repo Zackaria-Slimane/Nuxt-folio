@@ -4,8 +4,13 @@ export default defineNuxtConfig({
 		'@nuxtjs/tailwindcss',
 		'@pinia/nuxt',
 		'nuxt-simple-sitemap',
+		'nuxt-simple-robots',
 	],
-
+	robots: {
+		sitemap: [
+			'https://zackariasl.dev/sitemap.xml',
+		],
+	},
 	runtimeConfig: {
 		public: {
 			titleSeparator: '|',
@@ -56,6 +61,7 @@ export default defineNuxtConfig({
 			],
 			link: [
 				{ rel: "icon", href: "./favicon.ico" },
+				{ rel: "canonical", href: "https://zackariasl.dev" },
 				{ rel: "manifest", href: "./site.webmanifest" },
 				{ rel: "apple-touch-icon", sizes: "180x180", href: "./apple-touch-icon.png" },
 				{ rel: "icon", type: "image/png", sizes: "32x32", href: "./favicon-32x32.png" },

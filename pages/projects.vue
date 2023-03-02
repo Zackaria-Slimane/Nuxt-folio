@@ -22,7 +22,20 @@
 import { useProjectStore } from "~/store/projectStore";
 
 const { getAllProjects } = useProjectStore();
-
 const projects = getAllProjects;
+
+useHead({
+  title: 'Projects - Zackaria SLIMANE',
+  meta: [
+    { name: "description", content: "Projects - Zackaria SLIMANE - Front-end Web Developer" },
+    { name: "og:description", content: "Projects - Zackaria SLIMANE - Front-end Web Developer " },
+    { name: "twitter:description", content: "Projects - Zackaria SLIMANE - Front-end Web Developer " },
+    { name: "og:title", content: "Projects - Zackaria SLIMANE - Front-end Web Developer" },
+    { name: "twitter:title", content: "Projects - Zackaria SLIMANE - Front-end Web Developer" },
+  ],
+  link: [
+    { rel: "canonical", href: "https://zackariasl.dev/projects/" },
+  ]
+})
 
 </script>

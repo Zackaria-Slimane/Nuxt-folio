@@ -1,5 +1,6 @@
 <template>
   <div>
+    <RobotMeta />
     <NuxtLayout name="default">
       <NuxtPage v-slot="{ Component }">
         <component :is="Component" />
@@ -11,6 +12,10 @@
     </Teleport>
   </div>
 </template>
+
+<script setup>
+  defineRobotMeta()
+</script>
 
 <style>
 .page-enter-active,

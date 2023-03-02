@@ -51,3 +51,19 @@
 		</NuxtLayout>
 	</div>
 </template>
+
+<script setup>
+	useHead({
+		title: 'About me - Zackaria SLIMANE',
+		meta: [
+			{ name: "description", content: "About Zackaria SLIMANE - Front-end Web Developer" },
+			{ name: "og:description", content: "About Zackaria SLIMANE - Front-end Web Developer " },
+			{ name: "twitter:description", content: "About Zackaria SLIMANE - Front-end Web Developer " },
+			{ name: "og:title", content: "About Zackaria SLIMANE - Front-end Web Developer" },
+			{ name: "twitter:title", content: "About Zackaria SLIMANE - Front-end Web Developer" },
+		],
+		link: [
+			{ rel: "canonical", href: "https://zackariasl.dev/about/" },
+		]
+	})
+</script>
