@@ -34,7 +34,7 @@ export const useProjectStore = defineStore<string, ProjectStore>("projectStore",
                 "A  landing page for construction company client based in Morocco",
             tech: ["Next js", "TailwindCss"],
             link: "https://engie.durable.co",
-            featured: true,
+            featured: false,
         },
         {
             id: 3,

@@ -1,8 +1,6 @@
-
 <template>
 	<div class="overflow-hidden bg-transparent py-16 px-4 sm:px-6 lg:px-8 lg:py-24">
 		<div class="relative mx-auto max-w-xl">
-
 			<div class="text-center">
 				<h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-gray-50">Get in touch with me
 					<span class="text-amber-400">!</span>
