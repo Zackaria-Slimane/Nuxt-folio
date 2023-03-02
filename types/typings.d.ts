@@ -21,6 +21,7 @@ export type Work = {
     from: string;
     to: string;
     link: string;
+    tech: string[]
 }
 
 export type WorkStore = {

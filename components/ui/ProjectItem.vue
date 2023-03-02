@@ -11,6 +11,9 @@
       <p class="text-sm md:text-base">
         {{ description }}
       </p>
+      <div class="flex flex-row gap-3 flex-wrap">
+        <Badge class="testBADGE" v-for="t in  tech" :key="t" :label="t" />
+      </div>
     </div>
   </a>
 </template>

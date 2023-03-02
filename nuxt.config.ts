@@ -3,7 +3,6 @@ export default defineNuxtConfig({
 	modules: [
 		'@nuxtjs/tailwindcss',
 		'@pinia/nuxt',
-		'@nuxtjs/fontaine',
 		'nuxt-simple-sitemap',
 	],
 
@@ -17,15 +16,8 @@ export default defineNuxtConfig({
 			language: 'en-US', // prefer more explicit language codes like `en-AU` over `en`
 		},
 		GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
-		SMTP_PORT: process.env.SMTP_PORT,
-		SMTP_HOST: process.env.SMTP_HOST
 	},
 
-	tailwindcss: {
-		cssPath: '~/assets/css/tailwind.css',
-		configPath: '~/tailwind.config.js',
-		exposeConfig: true
-	},
 	nitro: {
 		prerender: {
 			crawlLinks: true,

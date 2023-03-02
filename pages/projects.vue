@@ -11,7 +11,7 @@
       <hr class="bg-squgily bg-repeat border-0 h-[6px] opacity-25" />
       <div class="flex flex-col items-center justify-center gap-28">
         <MainProjectItem v-for="proj in projects" :key="proj.id" :description="proj.description"
-          :image="proj.image" :link="proj.link" :name="proj.name" />
+          :image="proj.image" :link="proj.link" :name="proj.name" :tech="proj.tech" />
       </div>
       <TheFooter />
     </NuxtLayout>
