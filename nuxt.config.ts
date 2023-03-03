@@ -5,7 +5,6 @@ export default defineNuxtConfig({
 		'@pinia/nuxt',
 		'nuxt-simple-sitemap',
 		'nuxt-simple-robots',
-		"nuxt-security"
 	],
 	runtimeConfig: {
 		public: {
