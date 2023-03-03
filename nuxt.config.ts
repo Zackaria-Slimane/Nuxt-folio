@@ -5,12 +5,8 @@ export default defineNuxtConfig({
 		'@pinia/nuxt',
 		'nuxt-simple-sitemap',
 		'nuxt-simple-robots',
+		"nuxt-security"
 	],
-	robots: {
-		sitemap: [
-			'https://zackariasl.dev/sitemap.xml',
-		],
-	},
 	runtimeConfig: {
 		public: {
 			titleSeparator: '|',
