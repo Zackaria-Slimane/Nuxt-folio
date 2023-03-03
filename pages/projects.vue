@@ -1,8 +1,8 @@
 <template>
   <div>
-    <NuxtLayout name="page">
+    <NuxtLayout name="project">
       <MainTitle>Projects</MainTitle>
-      <MainParagraph class="-mt-2">
+      <MainParagraph class="mt-2">
         These are some of my public / side projects that i built , i also participate in <span
           class="text-orange-400">Hacktoberfest</span>
         and i am constatly looking for <span class="text-rose-400">Open Source projects</span> to
