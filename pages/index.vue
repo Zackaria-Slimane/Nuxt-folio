@@ -5,6 +5,7 @@
 		<TheWorks />
 		<hr class="bg-squgily bg-repeat border-0 h-[6px] opacity-25" />
 		<FeaturedProjects />
+		<TheStack />
 		<TheFooter />
 	</div>
 </template>
