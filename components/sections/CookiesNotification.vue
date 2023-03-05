@@ -31,7 +31,7 @@ defineNuxtPlugin((nuxtApp) => {
 	nuxtApp.vueApp.use(VueGtag, {
 		property: {
 			id: process.env.GOOGLE_ANALYTICS_ID,
-			isEnabled: true,
+			isEnabled: false,
 		}
 	})
 })
