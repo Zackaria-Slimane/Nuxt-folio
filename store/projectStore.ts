@@ -47,15 +47,6 @@ export const useProjectStore = defineStore<string, ProjectStore>("projectStore",
 			featured: false,
 		},
 		{
-			id: 4,
-			name: "Animefy",
-			image: images["../assets/featured/animefy-shot.png"],
-			description:
-				"A  rapidApi based app that suggests what to watch following input",
-			tech: ["Vue 3", "Node.js", "TailwindCSS", "Netlify"],
-			link: "https://animefy.netlify.app",
-		},
-		{
 			id: 22,
 			name: "Distribio",
 			image: images["../assets/featured/distribio.png"],
@@ -64,15 +55,7 @@ export const useProjectStore = defineStore<string, ProjectStore>("projectStore",
 			tech: ["Shopify", "custom Css"],
 			link: "https://distribio.ma/",
 		},
-		{
-			id: 2,
-			name: "My Old Portfolio",
-			image: images["../assets/featured/portcelio-shot.png"],
-			description:
-				"Basic portfolio built with Vue 2 - outdated",
-			tech: ["Vue 2", "TailwindCSS"],
-			link: "https://portcelio.netlify.app/",
-		}
+
 	];
 
 	return {

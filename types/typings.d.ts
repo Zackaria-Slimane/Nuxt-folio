@@ -14,6 +14,16 @@ export type ProjectStore = {
 
 }
 
+export type StackStore = {
+	getAllStacks: Stack[];
+}
+
+export type Stack = {
+	id: number;
+	name: string;
+	image: string;
+}
+
 export type Work = {
 	id: number;
 	name: string;
