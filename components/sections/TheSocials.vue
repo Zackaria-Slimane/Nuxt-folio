@@ -11,11 +11,10 @@
 			<SocialIcon title="Twitter" link="https://twitter.com/gitignorer"
 				icon="ant-design:twitter-outlined" />
 		</div>
-		<ActionButton link="mailto:zackaria.slimane">Email me !</ActionButton>
+		<ActionBtn label="Email me !" link="mailto:zakaria.slimane@hotmail.fr"/>
 	</div>
 </template>
 
 <script setup lang="ts">
-import ActionButton from "../ui/ActionButton.ts";
 import SocialIcon from "../ui/SocialIcon.ts";
 </script>

@@ -7,10 +7,10 @@
 			<div class="flex flex-row flex-wrap gap-3">
 				<Badge v-for="t in  tech" :key="t" :label="t" />
 			</div>
-			<ActionButton :link="link" class="w-fit">
+			<ProjectBtn :link="link" class="w-fit">
 				{{ returnDomain(link) }}
 				<Icon class="inline text-xl" color="#eaeaea" icon="ep:top-right" />
-			</ActionButton>
+			</ProjectBtn>
 		</div>
 	</div>
 </template>

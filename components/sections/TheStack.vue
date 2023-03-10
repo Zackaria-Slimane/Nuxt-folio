@@ -1,7 +1,7 @@
 <template>
   <div>
     <hr class="bg-squgily bg-repeat border-0 h-[6px] opacity-25 my-6" />
-    <SectionTitle class="text-gray-100">Technologies i work with</SectionTitle>
+    <SectionTitle class="text-text_bg dark:text-p_text">Technologies i work with</SectionTitle>
     <div class="container py-10 flex flex-wrap gap-3 justify-center overflow-x-hidden">
       <div class="stackitems" v-for="stack in stacks" :key="stack.id">
         <img class="stackImg stackitem" :src="stack.image" :alt="stack.name">

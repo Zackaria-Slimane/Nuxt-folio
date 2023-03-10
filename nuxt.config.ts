@@ -5,7 +5,18 @@ export default defineNuxtConfig({
 		'@pinia/nuxt',
 		'nuxt-simple-sitemap',
 		'nuxt-simple-robots',
+		'@nuxtjs/color-mode'
 	],
+	colorMode: {
+		classSuffix: ''
+	},
+	tailwindcss: {
+		exposeConfig: false,
+		cssPath: "@/assets/css/tailwind.css",
+		configPath: 'tailwind.config.js',
+		injectPosition: 0,
+		viewer: true,
+	},
 	runtimeConfig: {
 		public: {
 			titleSeparator: '|',
@@ -25,6 +36,8 @@ export default defineNuxtConfig({
 			crawlLinks: true,
 			routes: [
 				'/',
+				'/about',
+				'/projects'
 			]
 		},
 		compressPublicAssets: {
