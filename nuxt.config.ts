@@ -68,6 +68,7 @@ export default defineNuxtConfig({
 				{ name: "application-name", content: "Zackaria SLIMANE - Front-end Web Developer portfolio" },
 				{ name: "apple-mobile-web-app-title", content: "Zackaria SLIMANE - Front-end Web Developer" },
 				{ charset: "UTF-8" },
+				//{ name: 'color-scheme', content: 'dark light' }
 			],
 			link: [
 				{ rel: "icon", href: "./favicon.ico" },

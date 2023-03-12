@@ -1,5 +1,5 @@
 <template>
-	<div class="dark:text-p_text" >
+	<div class="dark:text-p_text dark:bg-background px-3 sm:px-1" >
 		<RobotMeta />
 		<NuxtLayout  name="default">
 			<NuxtPage  v-slot="{ Component }">
@@ -28,4 +28,6 @@ defineRobotMeta()
 	opacity: 0.3;
 	filter: blur(1rem);
 }
+
+
 </style>

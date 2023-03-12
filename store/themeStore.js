@@ -3,7 +3,7 @@ import { defineStore } from "pinia";
 export const useThemeStore = defineStore("themeStore", {
   state: () => {
     return {
-      theme: "light",
+      theme: "dark",
     }
   },
   actions: {

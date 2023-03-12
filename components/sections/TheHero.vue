@@ -6,18 +6,18 @@
 		</MainTitle>
 
 		<MainParagraph>
-			Hello, i am <span class="text-teal-400">Zackaria Slimane</span> , a passionate
-			<span class="text-yellow-400">javascript</span>	front end developer
-			With experience in the <span class="text-green-400">Vue JS</span> ecosystem.
+			Hello, i am <span class="text-sky-500">Zackaria Slimane</span> , a passionate
+			<span class="text-yellow-500">javascript</span>	front end developer
+			With experience in the <span class="text-green-600">Vue JS</span> ecosystem.
 		</MainParagraph>
 
 		<MainParagraph>
 			I'm currently working full-time for
-			<LinkBtn class="!text-red-400" link="http://adhocmaroc.com" text="ADHOC Agency" />
+			<LinkBtn class="text-rose-500" link="http://adhocmaroc.com" text="ADHOC Agency" />
 			a digital marketing agency. I am also developing a Budgeting app,
-			<LinkBtn class="!text-cyan-400" link="https://coinbend.netlify.app" text="Coinbend" />
+			<LinkBtn class="text-sky-500" link="https://coinbend.netlify.app" text="Coinbend" />
 			As a basic expense and budget tracking web application. While also learning and practicing
-			<LinkBtn class="!text-blue-400" link="https://reactjs.org" text="React" />
+			<LinkBtn class="!text-blue-500" link="https://reactjs.org" text="React" />
 		</MainParagraph>
 	</div>
 </template>

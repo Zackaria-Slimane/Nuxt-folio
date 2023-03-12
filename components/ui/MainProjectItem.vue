@@ -2,7 +2,7 @@
 	<div class="flex flex-col items-center gap-8 w-4/5">
 		<img :alt="name" :src="image" class="rounded-lg w-full" />
 		<div class="flex flex-col mx-auto md:w-5/6 items-left gap-6">
-			<span class="font-theme_bold text-2xl text-head_text">{{ name }}</span>
+			<span class="font-theme_bold text-2xl text-sky-700 dark:text-sky-400">{{ name }}</span>
 			<p class="text-sm lg:text-lg">{{ description }}</p>
 			<div class="flex flex-row flex-wrap gap-3">
 				<Badge v-for="t in  tech" :key="t" :label="t" />

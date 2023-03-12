@@ -31,7 +31,7 @@
 
 
 body {
-    @apply  font-theme selection:bg-selectionBack relative w-full flex flex-col items-center;
+    @apply bg-background font-theme selection:bg-selectionBack relative w-full flex flex-col items-center;
 }
 
 div > .router-link-active {
