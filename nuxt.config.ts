@@ -5,7 +5,18 @@ export default defineNuxtConfig({
 		'@pinia/nuxt',
 		'nuxt-simple-sitemap',
 		'nuxt-simple-robots',
+		'@nuxtjs/color-mode'
 	],
+	colorMode: {
+		classSuffix: ''
+	},
+	tailwindcss: {
+		exposeConfig: false,
+		cssPath: "@/assets/css/tailwind.css",
+		configPath: 'tailwind.config.js',
+		injectPosition: 0,
+		viewer: true,
+	},
 	runtimeConfig: {
 		public: {
 			titleSeparator: '|',
@@ -25,6 +36,8 @@ export default defineNuxtConfig({
 			crawlLinks: true,
 			routes: [
 				'/',
+				'/about',
+				'/projects'
 			]
 		},
 		compressPublicAssets: {
@@ -55,6 +68,7 @@ export default defineNuxtConfig({
 				{ name: "application-name", content: "Zackaria SLIMANE - Front-end Web Developer portfolio" },
 				{ name: "apple-mobile-web-app-title", content: "Zackaria SLIMANE - Front-end Web Developer" },
 				{ charset: "UTF-8" },
+				//{ name: 'color-scheme', content: 'dark light' }
 			],
 			link: [
 				{ rel: "icon", href: "./favicon.ico" },
