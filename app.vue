@@ -1,20 +1,20 @@
 <template>
-	<div>
+	<div class="dark:text-p_text dark:bg-background px-3 sm:px-1" >
 		<RobotMeta />
-		<NuxtLayout name="default">
-			<NuxtPage v-slot="{ Component }">
-				<component :is="Component" />
+		<NuxtLayout  name="default">
+			<NuxtPage  v-slot="{ Component }">
+				<component  :is="Component" />
 			</NuxtPage>
 		</NuxtLayout>
 		<Teleport to="body">
-			<TheNavbar />
+			<TheNavbar  />
 			<CookiesNotification />
 		</Teleport>
 	</div>
 </template>
 
 <script setup>
-	defineRobotMeta()
+defineRobotMeta()
 </script>
 
 <style>
@@ -28,4 +28,6 @@
 	opacity: 0.3;
 	filter: blur(1rem);
 }
+
+
 </style>
