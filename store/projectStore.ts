@@ -27,13 +27,33 @@ export const useProjectStore = defineStore<string, ProjectStore>("projectStore",
 			featured: true,
 		},
 		{
+			id: 26,
+			name: "Beautymall - online beauty and drugstore",
+			image: images["../assets/featured/beautymall.png"],
+			description:
+				"New and improved Ecommerce site for Beautymall",
+			tech: ["Wordpress", "SEO", "Custom css", 'javaScript'],
+			link: "https://beautymall.ma/",
+			featured: true,
+		},
+		{
+			id: 26,
+			name: "WestPoint - Eco lodges, fresh food and surf culture",
+			image: images["../assets/featured/westpoint.png"],
+			description:
+				"Westpoint's new website for Dakhla Hotels group",
+			tech: ["Wordpress", "SEO", "javaScript", "Custom css"],
+			link: "https://westpointdakhla.ma/",
+			featured: false,
+		},
+		{
 			id: 14,
 			name: "ENGIE  - Construction company",
 			image: images["../assets/featured/engie.png"],
 			description:
 				"A  landing page for construction company client based in Morocco",
-			tech: ["Next js", "TailwindCss"],
-			link: "https://engie.durable.co",
+			tech: ["Wordpress", "Custom css"],
+			link: "https://engieconstruction.com",
 			featured: false,
 		},
 		{
@@ -43,7 +63,7 @@ export const useProjectStore = defineStore<string, ProjectStore>("projectStore",
 			description:
 				"Tasks board tracking app with drag and drop functionality",
 			tech: ["Vue.js", "TailwindCSS", "MongoDB", "Netlify"],
-			link: "https://droptask.netlify.app/#/",
+			link: "https://droptask.netlify.app/",
 			featured: false,
 		},
 		{
