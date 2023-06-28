@@ -37,7 +37,7 @@ export const useProjectStore = defineStore<string, ProjectStore>("projectStore",
 			featured: true,
 		},
 		{
-			id: 26,
+			id: 28,
 			name: "WestPoint - Eco lodges, fresh food and surf culture",
 			image: images["../assets/featured/westpoint.png"],
 			description:
