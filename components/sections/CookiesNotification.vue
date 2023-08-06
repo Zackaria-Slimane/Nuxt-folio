@@ -2,7 +2,7 @@
 	<Transition mode="in-out" name="page">
 		<div v-if="!cookieStatus"
 			class="max-w-screen-slg w-11/12 md:w-10/12 fixed bottom-20 sm:bottom-9 rounded-md bg-navbar_back backdrop-blur-sm px-6 py-4 z-50 border-[1px] border-border_sm">
-			<div class="flex justify-between items-center">
+			<div class="flex justify-between items-center text-white">
 				<SectionParagraph>This website uses Google Analytics to collect anonymous information.
 					<LinkBtn link="/policies" text="Learn more" />
 				</SectionParagraph>

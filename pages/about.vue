@@ -9,26 +9,17 @@
 					<span class="text-yellow-500">javascript</span>
 					enthusiast.
 					Being self taught and driven by my own desire and love for programming and technology , i am
-					quite comfortable with the <span class="text-green-600">Vue JS</span> ecosystem. Beyond my
-					work in a startup i have dabbled many
-					hours with Vue and Nuxt.
+					quite comfortable with the <span class="text-green-600">Vue JS</span> ecosystem and have had professional experience using it.
+				</SectionParagraph>
+				<SectionParagraph>
+				Beyong my professional and work related experience , i have poured many hours working with technologies such as
+				<span class="text-green-700">SupaBse</span> and Nuxt 3 Server side rendering.
+While also dedicating daily hours to move towards  <span class="text-blue-500">React js</span>
 				</SectionParagraph>
 				<SectionParagraph>
 					I'm currently working full-time for
 					<LinkBtn class="text-rose-500" link="http://adhocmaroc.com" text="ADHOC Agency" />
-					,
-					a digital marketing agency. I am also developing a Budgeting app,
-					<LinkBtn class="text-sky-500" link="https://coinbend.netlify.app" text="Coinbend" />
-					As a basic free remplacement for the YNAB app, which is a fantastic expenses tracking app
-					and a wonderful book to read.
-					I used this project to explore and do a deeper dive into
-					<LinkBtn class="text-green-600" link="https://vuejs.org" text="Vue 3 " /> &
-					<LinkBtn class="text-green-600" link="https://nuxt.com" text="Nuxt 3" /> and the server
-					side
-					renreding.
-					While also integrating
-					<LinkBtn class="text-green-600" link="https://supabase.com" text="SupaBase" /> as a Backend
-					as a service BaaS.
+					, a digital marketing agency.
 				</SectionParagraph>
 
 				<SectionParagraph>

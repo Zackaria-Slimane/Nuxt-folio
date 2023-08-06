@@ -8,15 +8,13 @@
 		<MainParagraph>
 			Hello, i am <span class="text-sky-500">Zackaria Slimane</span> , a passionate
 			<span class="text-yellow-500">javascript</span>	front end developer
-			With experience in the <span class="text-green-600">Vue JS</span> ecosystem.
+			With experience in <span class="text-green-600">Vue JS</span> .
 		</MainParagraph>
 
 		<MainParagraph>
 			I'm currently working full-time for
 			<LinkBtn class="text-rose-500" link="http://adhocmaroc.com" text="ADHOC Agency" />
-			a digital marketing agency. I am also developing a Budgeting app,
-			<LinkBtn class="text-sky-500" link="https://coinbend.netlify.app" text="Coinbend" />
-			As a basic expense and budget tracking web application. While also learning and practicing
+			a digital marketing agency.  While also moving to
 			<LinkBtn class="!text-blue-500" link="https://reactjs.org" text="React" />
 		</MainParagraph>
 	</div>
