@@ -6,7 +6,7 @@
 			<SocialIcon title="LinkedIn" link="https://www.linkedin.com/in/zackaria-slimane/"
 				icon="ant-design:linkedin-outlined" />
 			<SocialIcon title="Resume" id="resume-target"
-				link="https://drive.google.com/file/d/1QCbKH84FV6Ea5TsGHEi9fr69OqRMgDOc/view?usp=share_link"
+				link="https://drive.google.com/file/d/1fBJ3DhWoFtxVjuI0ut3sX640z9iBp6re/view?usp=sharing"
 				icon="ant-design:file-outlined" />
 			<SocialIcon title="Twitter" link="https://twitter.com/gitignorer"
 				icon="ant-design:twitter-outlined" />
@@ -14,7 +14,3 @@
 		<ActionBtn label="Email me !" link="mailto:zakaria.slimane@hotmail.fr"/>
 	</div>
 </template>
-
-<script setup lang="ts">
-import SocialIcon from "../ui/SocialIcon.ts";
-</script>
