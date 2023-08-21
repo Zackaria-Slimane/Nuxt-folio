@@ -18,6 +18,16 @@ export const useProjectStore = defineStore<string, ProjectStore>("projectStore",
 			featured: true,
 		},
 		{
+			id: 1408,
+			name: "AST Forge - Resume maker",
+			image: images["../assets/featured/ast-forge.png"],
+			description:
+				"A resume maker based on a professionnal template",
+			tech: ["React", "Chakra UI", "Vite", "jspdf"],
+			link: "https://astforge.netlify.app",
+			featured: true,
+		},
+		{
 			id: 12,
 			name: "Disconnect to connect - All inclusive meetings",
 			image: images["../assets/featured/dtc.png"],
@@ -37,7 +47,7 @@ export const useProjectStore = defineStore<string, ProjectStore>("projectStore",
 				"New and improved Ecommerce site for Beautymall",
 			tech: ["Wordpress", "SEO", "Custom css", 'javaScript'],
 			link: "https://beautymall.ma/",
-			featured: false,
+			featured: true,
 		},
 		{
 			id: 28,
@@ -70,6 +80,7 @@ export const useProjectStore = defineStore<string, ProjectStore>("projectStore",
 				"Ecommerce website for local buisness",
 			tech: ["Shopify", "custom Css"],
 			link: "https://distribio.ma/",
+			featured: false,
 		},
 
 	];
