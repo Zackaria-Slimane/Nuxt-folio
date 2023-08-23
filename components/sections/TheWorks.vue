@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-	import { useWorkStore } from "@/store/workStore";
-	const workStore = useWorkStore();
-	const works = workStore.getAllWorks;
+import { useWorkStore } from "@/store/workStore";
+const workStore = useWorkStore();
+const works = workStore.getAllWorks;
 </script>
