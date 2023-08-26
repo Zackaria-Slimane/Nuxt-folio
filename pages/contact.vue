@@ -17,6 +17,6 @@ useHead({
 		{ name: "og:title", content: "Contact Zackaria SLIMANE - Front-end Web Developer" },
 		{ name: "twitter:title", content: "Contact Zackaria SLIMANE - Front-end Web Developer" },
 	],
-	link: [{ rel: "canonical", href: "https://zackariasl.dev/contact/" }],
+	link: [{ rel: "canonical", href: "https://zackariasl.ma/contact/" }],
 });
 </script>
