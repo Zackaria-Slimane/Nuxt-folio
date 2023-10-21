@@ -2,20 +2,19 @@
 	<div class="flex flex-col gap-8">
 		<MainTitle
 			class="bg-clip-text bg-gradient-to-r from-sky-600 via-teal-400 to-yellow-500 text-transparent text-focus-in">
-			Front End Developer , self learner, <span class="typewritter"></span>
+			Front End Developer , self learner <span class="typewritter"></span>
 		</MainTitle>
 
 		<MainParagraph>
 			Hello, i am <span class="text-sky-500">Zackaria Slimane</span> , a passionate
-			<span class="text-yellow-500">javascript</span> front end developer With experience in
-			<span class="text-green-600">Vue JS</span> .
+			<span class="text-yellow-500">javascript</span> front end developer With experience
+			in <span class="text-green-600">Vue JS</span> .
 		</MainParagraph>
 
 		<MainParagraph>
 			I'm currently working full-time for
-			<LinkBtn class="text-rose-500" link="http://adhocmaroc.com" text="ADHOC Agency" />
-			a digital marketing agency. While also moving to
-			<LinkBtn class="!text-blue-500" link="https://reactjs.org" text="React" />
+			<LinkBtn class="text-rose-500" link="http://nuitee.com" text="Nuitee" />
+			as a full stack developer working with REACT & Golang
 		</MainParagraph>
 	</div>
 </template>
